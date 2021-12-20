@@ -4,7 +4,7 @@ import frequency_parser
 
 first_test_data = [
     ("100", 100),
-    ("100,10", None),
+    ("100,10", 100),
     ("100.00", 100),
     ("200hz", 200),
     ("256HZ", 256),
@@ -20,5 +20,5 @@ first_test_data = [
 
 @pytest.mark.parametrize("fr, result", first_test_data)
 def test_parser(fr, result):
-    hz_value = frequency_parser.parse(test_parser)
+    hz_value = frequency_parser.parse(fr)
     assert hz_value == result

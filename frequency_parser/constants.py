@@ -1,5 +1,7 @@
 SPACE: str = " "
 NOTHING: str = ""
+DOT: str = "."
+COMMA: str = ","
 HZ: str = "hz"
 KHZ: str = "khz"
 MHZ: str = "mhz"
@@ -13,7 +15,6 @@ SUPPORTED_ABBREVIATIONS: list = [
     GHZ,
     THZ,
 ]
-
 
 KHZ_MULTIPLIER: int = 1000
 MHZ_MULTIPLIER: int = 1000000
